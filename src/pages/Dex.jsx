@@ -6,11 +6,11 @@ import { useState } from "react";
 
 function Dex() {
   const [selectedPokemon, setSelectedPokemon] = useState("");
-  const navigate = useNavigate();
+  //   const navigate = useNavigate();
 
   const addPokemon = (pokemon) => {
     if (selectedPokemon.some((p) => p.id === pokemon.id)) {
-      alert("이미 추가된 포켓몬입니다.");
+      alert("이미 추가된 포켓몬 입니다.");
     } else {
       setSelectedPokemon(...selectedPokemon, pokemon);
     }
@@ -20,7 +20,7 @@ function Dex() {
     //   {* 제거는 필터를 이용해 봅시다 *}
   };
 
-  // const
+  // const goDetail =
   // navigate("/pokemon-detail?id=${id}")}
 
   return (
